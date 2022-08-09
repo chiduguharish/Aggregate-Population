@@ -1,0 +1,13 @@
+package com.chidugu.russia.population;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RussiaPopulationApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RussiaPopulationApplication.class, args);
+	}
+
+}

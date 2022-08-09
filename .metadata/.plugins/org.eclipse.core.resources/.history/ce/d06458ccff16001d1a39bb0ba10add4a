@@ -1,0 +1,4 @@
+server.port = 8097
+spring.application.name = india-population
+
+spring.cloud.config.uri = http://localhost:8100

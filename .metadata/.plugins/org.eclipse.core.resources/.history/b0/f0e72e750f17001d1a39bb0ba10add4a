@@ -1,0 +1,27 @@
+package com.chidugu.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.chidugu.beans.Population;
+
+@Service
+public class IndiaPopulationInfo {
+	
+	
+	@Autowired
+    private RestTemplate restTemplate;
+	
+	
+
+	public Population getIndiaPopulation() {
+		Population population = restTemplate.getForObject("http://india-population/india/population", Population.class);
+		return population;
+	}
+	
+	public MovieCatalogItem getFallBackMovieCatalogItem(Rating rating) {
+		return new MovieCatalogItem("No Movie Name","",rating.getRating());
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.chidugu.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ConfigurationProperties("india")
+public class Population {
+	
+	String population;
+	String male;
+	String female;
+
+}

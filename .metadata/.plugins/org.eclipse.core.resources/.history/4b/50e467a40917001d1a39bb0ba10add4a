@@ -1,0 +1,5 @@
+package com.chidugu.rest.controller;
+
+public class MainController {
+
+}

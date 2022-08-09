@@ -1,0 +1,17 @@
+package com.chidugu.india.population;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@EnableEurekaClient
+@ComponentScan(basePackages = {"com.chidugu.rest.controller","com.chidugu.properties"})
+public class IndiaPopulationApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(IndiaPopulationApplication.class, args);
+	}
+
+}

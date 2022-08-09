@@ -1,0 +1,5 @@
+package com.chidugu.beans;
+
+public class TotalPopulation {
+
+}

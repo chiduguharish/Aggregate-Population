@@ -1,0 +1,26 @@
+package com.chidugu.rest.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.chidugu.beans.TotalPopulation;
+
+@RestController
+@RequestMapping("/total")
+public class MainController {
+	
+	
+	@Autowired
+    private RestTemplate restTemplate;
+	
+	
+	@RequestMapping("/population")
+	TotalPopulation getTotalPopulation() {
+		TotalPopulation totalPopulation = new TotalPopulation();
+		
+		return totalPopulation;
+	}
+	
+
+}

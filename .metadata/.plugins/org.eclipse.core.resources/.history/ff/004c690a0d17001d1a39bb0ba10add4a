@@ -1,0 +1,11 @@
+package com.chidugu.beans;
+
+public class TotalPopulation {
+	
+	int totalPopulation;
+	int malePopulation;
+	int femalePopulation;
+	
+	
+
+}

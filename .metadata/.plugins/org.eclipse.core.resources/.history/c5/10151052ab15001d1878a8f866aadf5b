@@ -1,0 +1,13 @@
+package com.chidugu.us.population;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class UsPopulationApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UsPopulationApplication.class, args);
+	}
+
+}

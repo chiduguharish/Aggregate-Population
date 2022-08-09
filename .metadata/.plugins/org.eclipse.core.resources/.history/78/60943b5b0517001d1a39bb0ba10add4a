@@ -1,0 +1,21 @@
+package com.chidugu.rest.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/india")
+public class MainController {
+	
+	
+	@Value(value = "${india.population}")
+	String population;
+	
+	
+	@RequestMapping("/population")
+	String getPopulation() {
+		return population;
+	}
+
+}
